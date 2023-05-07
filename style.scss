@@ -11,6 +11,7 @@ a {
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #000915;
+    cursor: pointer;
 }
 
 .center {
@@ -58,6 +59,7 @@ body {
         transition: all 0.5s;
 
         &:hover {
+            cursor: url(img/cursor.svg), pointer;
             transform: scale(1.03);
         }
     }
@@ -86,6 +88,7 @@ body {
         transition: all 0.2s;
 
         &:hover {
+            cursor: url(img/cursor.svg), pointer;
             border: 3px solid #44D2FF;
             border-radius: 18px;
         }
