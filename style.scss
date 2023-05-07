@@ -72,24 +72,23 @@ body {
     margin-top: 128px;
     margin-bottom: 128px;
 
-    &__content {
-        position: relative;
-        // display: flex;  
-        // margin-left: 10px;
-        // text-left: 30px;
-        transition: all 0.5s;
 
-        &:hover {
-            transform: scale(1.03);
-        }
+    &__content {
+        max-height: 305px;
+        position: relative;
     }
 
     &__item {
         width: 378px;
         height: 300px;
         font-size: 24px;
-        transition: all 2s;
         border-radius: 18px;
+        transition: all 0.2s;
+
+        &:hover {
+            border: 3px solid #44D2FF;
+            border-radius: 18px;
+        }
     }
 
     &__text {
