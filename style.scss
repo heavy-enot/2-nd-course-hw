@@ -55,6 +55,11 @@ body {
         font-size: 18px;
         line-height: 22px;
         color: #FFFFFF;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.03);
+        }
     }
 }
 
