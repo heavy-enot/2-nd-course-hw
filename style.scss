@@ -20,9 +20,10 @@ body {
 }
 
 .header-top {
-    background-image: url(img/top.jpg);
+    min-height: 1024px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 200%), url(img/top.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 
     &__title {
@@ -46,7 +47,7 @@ body {
     }
 
     &__button {
-        margin-bottom: 493px;
+        // margin-bottom: 493px;
         background: #9C0332;
         border-radius: 30px;
         border: none;
