@@ -47,7 +47,6 @@ body {
     }
 
     &__button {
-        // margin-bottom: 493px;
         background: #9C0332;
         border-radius: 30px;
         border: none;
@@ -66,7 +65,7 @@ body {
     }
 }
 
-.game {
+.links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -104,6 +103,60 @@ body {
         font-size: 24px;
         line-height: 32px;
         color: #FFFFFF;
+    }
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    gap: 135px;
+    padding-top: 233px;
+    padding-bottom: 233px;
+}
+
+.game-slova {
+    // display: flex;
+    // align-items: center;
+    flex-direction: row-reverse;
+    // gap: 135px;
+}
+
+.game-content {
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;        
+        color: #FFFFFF;
+        padding-bottom: 32px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;        
+        color: #FFFFFF;
+        padding-bottom: 32px;
+    }
+
+    &__button {
+        background: #9C0332;
+        border-radius: 30px;
+        border: none;
+        padding: 13px 74px 13px 74px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        transition: all 0.5s;
+
+        &:hover {
+            cursor: url(img/cursor.svg), pointer;
+            transform: scale(1.03);
+        }
     }
 }
 

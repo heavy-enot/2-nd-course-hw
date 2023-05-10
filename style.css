@@ -61,7 +61,7 @@ body {
   transform: scale(1.03);
 }
 
-.game {
+.links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -71,23 +71,23 @@ body {
   margin-top: 128px;
   margin-bottom: 128px;
 }
-.game__content {
+.links__content {
   max-height: 305px;
   position: relative;
 }
-.game__item {
+.links__item {
   width: 378px;
   height: 300px;
   font-size: 24px;
   border-radius: 18px;
   transition: all 0.2s;
 }
-.game__item:hover {
+.links__item:hover {
   cursor: url(img/cursor.svg), pointer;
   border: 3px solid #44D2FF;
   border-radius: 18px;
 }
-.game__text {
+.links__text {
   position: absolute;
   left: 32px;
   bottom: 32px;
@@ -98,11 +98,56 @@ body {
   color: #FFFFFF;
 }
 
+.game {
+  display: flex;
+  align-items: center;
+  gap: 135px;
+  padding-top: 233px;
+  padding-bottom: 233px;
+}
+
+.game-slova {
+  flex-direction: row-reverse;
+}
+
+.game-content__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+}
+.game-content__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+}
+.game-content__button {
+  background: #9C0332;
+  border-radius: 30px;
+  border: none;
+  padding: 13px 74px 13px 74px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.game-content__button:hover {
+  cursor: url(img/cursor.svg), pointer;
+  transform: scale(1.03);
+}
+
 @media (max-width: 1230px) {
   .header-top {
     padding-left: 16px;
   }
-  .game {
+  .links {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -146,7 +191,7 @@ body {
     line-height: 22px;
     color: #FFFFFF;
   }
-  .game__item {
+  .links__item {
     width: 343px;
   }
 }/*# sourceMappingURL=style.css.map */
