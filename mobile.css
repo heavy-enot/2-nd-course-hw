@@ -1,4 +1,8 @@
 @media (max-width: 375px) {
+  .center {
+    padding-left: calc(50% - 171px);
+    padding-right: calc(50% - 171px);
+  }
   .header-top {
     min-height: 735px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 200%), url(img/top-mobile.jpg);

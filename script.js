@@ -52,13 +52,13 @@ let user = {
 };
 // Задание 9;
 
-user["city of residence"] = "London";
+user[`city of residence`] = "London";
 // Задание 9.1;
 
-user.age - 40;
+user.age = 40;
 // Задание 9.2;
 
-delete user["city of residence"];
+delete user[`city of residence`];
 // Задание 9.3;
 
 let info = prompt("Какую информацию хотите узнать о пользователе?", ("name"), ("age"), ("isAdmin"));

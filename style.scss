@@ -112,13 +112,14 @@ body {
     gap: 135px;
     padding-top: 233px;
     padding-bottom: 233px;
+    justify-content: center;
 }
 
 .game-slova {
-    // display: flex;
-    // align-items: center;
+    //     // display: flex;
+    //     // align-items: center;
     flex-direction: row-reverse;
-    // gap: 135px;
+    //     // gap: 135px;
 }
 
 .game-content {
@@ -127,7 +128,7 @@ body {
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
-        line-height: 59px;        
+        line-height: 59px;
         color: #FFFFFF;
         padding-bottom: 32px;
     }
@@ -136,7 +137,7 @@ body {
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
-        line-height: 32px;        
+        line-height: 32px;
         color: #FFFFFF;
         padding-bottom: 32px;
     }
