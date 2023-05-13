@@ -11,6 +11,7 @@ a {
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #000915;
+    cursor: pointer;
 }
 
 .center {
@@ -19,9 +20,10 @@ body {
 }
 
 .header-top {
-    background-image: url(img/top.jpg);
+    min-height: 1024px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 200%), url(img/top.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 
     &__title {
@@ -45,7 +47,6 @@ body {
     }
 
     &__button {
-        margin-bottom: 493px;
         background: #9C0332;
         border-radius: 30px;
         border: none;
@@ -58,12 +59,13 @@ body {
         transition: all 0.5s;
 
         &:hover {
+            cursor: url(img/cursor.svg), pointer;
             transform: scale(1.03);
         }
     }
 }
 
-.game {
+.links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -72,24 +74,24 @@ body {
     margin-top: 128px;
     margin-bottom: 128px;
 
-    &__content {
-        position: relative;
-        // display: flex;  
-        // margin-left: 10px;
-        // text-left: 30px;
-        transition: all 0.5s;
 
-        &:hover {
-            transform: scale(1.03);
-        }
+    &__content {
+        max-height: 305px;
+        position: relative;
     }
 
     &__item {
         width: 378px;
         height: 300px;
         font-size: 24px;
-        transition: all 2s;
         border-radius: 18px;
+        transition: all 0.2s;
+
+        &:hover {
+            cursor: url(img/cursor.svg), pointer;
+            border: 3px solid #44D2FF;
+            border-radius: 18px;
+        }
     }
 
     &__text {
@@ -103,3 +105,61 @@ body {
         color: #FFFFFF;
     }
 }
+
+.game {
+    display: flex;
+    align-items: center;
+    gap: 135px;
+    padding-top: 233px;
+    padding-bottom: 233px;
+    justify-content: center;
+}
+
+.game-slova {
+    //     // display: flex;
+    //     // align-items: center;
+    flex-direction: row-reverse;
+    //     // gap: 135px;
+}
+
+.game-content {
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+    }
+
+    &__button {
+        background: #9C0332;
+        border-radius: 30px;
+        border: none;
+        padding: 13px 74px 13px 74px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        transition: all 0.5s;
+
+        &:hover {
+            cursor: url(img/cursor.svg), pointer;
+            transform: scale(1.03);
+        }
+    }
+}
+
+@import 'tablet';
+@import 'mobile';
