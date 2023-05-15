@@ -68,3 +68,65 @@
 // let name = prompt("Напишите ваше имя");
 // alert("Привет " + name +"!");
 // // Задание 10.
+
+
+
+// ДОМАШКА № 3
+
+let password = 'qwerty';
+let inputPassword = prompt('Введите пароль');
+if (inputPassword === password) {
+    console.log('Пароль введен верно');
+
+} else {
+    console.log('Пароль введен неверно');
+};
+// Задание 1;
+
+let c = 2;
+if (c > 0 && c < 10) {
+    console.log('верно');
+} else {
+    console.log('неверно');
+};
+// Задание 2;
+
+let e = 1;
+let d = 52;
+(e > 100 || d > 100) ? console.log('верно'): console.log('неверно');
+// Задание 3;
+
+let a = '2';
+let b = '3'; 
+alert(Number(a) + Number(b));
+// Задание 4;
+
+let monthNumber = Number(prompt('Введите номер месяца'));
+switch (monthNumber) {
+    case 12:
+    case 1:
+    case 2:
+        console.log('Зима, холода, одинокие дома...');
+        break;
+    case 3:
+    case 4:
+    case 5:
+        console.log('Запахло весной, метелям отбой...');
+        break;
+    case 6:
+    case 7:
+    case 8:
+        console.log('Вот и лето наступает, помидоры расцветают...');
+        break;
+    case 9:
+    case 10:
+    case 11:
+        console.log('Осенью в дожливый серый день, проскакал по городу олень...');
+        break;
+
+    default:
+        console.log('А такой песни не существует, как и времени года');
+        break;
+};
+// Задание 5;
+
