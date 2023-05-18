@@ -130,3 +130,20 @@ switch (monthNumber) {
 };
 // Задание 5;
 
+let enterTheNumber = prompt('Введите любое число');
+if (isNaN(enterTheNumber) === false) {
+    console.log('number');
+} else {
+    console.log('nan')};
+if (enterTheNumber % 2 === 0) {
+    console.log('Число четное');
+} else {console.log('Число нечетное')};
+// Задание 7;
+
+let clientOS = Number(prompt('Введите 0, если у вас iOS или 1, если стоит Android'));
+if (clientOS === 1) {
+    console.log('Установите версию приложения для Android по ссылке');
+} else {
+    console.log('Установите версию приложения для iOS по ссылке');
+};
+// Задание 8;
