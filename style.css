@@ -104,7 +104,6 @@ body {
   gap: 135px;
   padding-top: 233px;
   padding-bottom: 233px;
-  justify-content: center;
 }
 
 .game-slova {
@@ -198,5 +197,46 @@ body {
   }
   .links__item {
     width: 343px;
+  }
+  .game {
+    flex-direction: column;
+    gap: 64px;
+    padding-top: 0;
+    padding-bottom: 136px;
+  }
+  .game-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .game-content__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+  }
+  .game-content__text {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+  .game-content__button {
+    background: #9C0332;
+    border-radius: 30px;
+    border: none;
+    padding: 13px 90px 13px 74px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+  .game__img {
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
