@@ -148,7 +148,9 @@
 // };
 // // Задание 8;
 
-ДОМАШКА № 4
+
+
+// ДОМАШКА № 4
 
 let hi = 0;
 while (hi < 2) {
@@ -164,10 +166,10 @@ while (number <= 5) {
 }
 // Задание 2;
 
-let number = 7;
-while (number <= 22) {
-    console.log(number);
-    number++
+let variable = 7;
+while (variable <= 22) {
+    console.log(variable);
+    variable++
 }
 // Задание 3;
 
