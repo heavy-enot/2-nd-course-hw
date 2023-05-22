@@ -73,79 +73,128 @@
 
 // ДОМАШКА № 3
 
-let password = 'qwerty';
-let inputPassword = prompt('Введите пароль');
-if (inputPassword === password) {
-    console.log('Пароль введен верно');
+// let password = 'qwerty';
+// let inputPassword = prompt('Введите пароль');
+// if (inputPassword === password) {
+//     console.log('Пароль введен верно');
 
-} else {
-    console.log('Пароль введен неверно');
-};
+// } else {
+//     console.log('Пароль введен неверно');
+// };
+// // Задание 1;
+
+// let c = 2;
+// if (c > 0 && c < 10) {
+//     console.log('верно');
+// } else {
+//     console.log('неверно');
+// };
+// // Задание 2;
+
+// let e = 1;
+// let d = 52;
+// (e > 100 || d > 100) ? console.log('верно'): console.log('неверно');
+// // Задание 3;
+
+// let a = '2';
+// let b = '3'; 
+// alert(Number(a) + Number(b));
+// // Задание 4;
+
+// let monthNumber = Number(prompt('Введите номер месяца'));
+// switch (monthNumber) {
+//     case 12:
+//     case 1:
+//     case 2:
+//         console.log('Зима, холода, одинокие дома...');
+//         break;
+//     case 3:
+//     case 4:
+//     case 5:
+//         console.log('Запахло весной, метелям отбой...');
+//         break;
+//     case 6:
+//     case 7:
+//     case 8:
+//         console.log('Вот и лето наступает, помидоры расцветают...');
+//         break;
+//     case 9:
+//     case 10:
+//     case 11:
+//         console.log('Осенью в дожливый серый день, проскакал по городу олень...');
+//         break;
+
+//     default:
+//         console.log('А такой песни не существует, как и времени года');
+//         break;
+// };
+// // Задание 5;
+
+// let enterTheNumber = prompt('Введите любое число');
+// if (isNaN(enterTheNumber) === false) {
+//     console.log('number');
+// } else {
+//     console.log('nan')};
+// if (enterTheNumber % 2 === 0) {
+//     console.log('Число четное');
+// } else {console.log('Число нечетное')};
+// // Задание 7;
+
+// let clientOS = Number(prompt('Введите 0, если у вас iOS или 1, если стоит Android'));
+// if (clientOS === 1) {
+//     console.log('Установите версию приложения для Android по ссылке');
+// } else {
+//     console.log('Установите версию приложения для iOS по ссылке');
+// };
+// // Задание 8;
+
+
+
+// ДОМАШКА № 4
+
+let hi = 0;
+while (hi < 2) {
+    alert("привет!");
+    hi++
+}
 // Задание 1;
 
-let c = 2;
-if (c > 0 && c < 10) {
-    console.log('верно');
-} else {
-    console.log('неверно');
-};
+let number = 0;
+while (number <= 5) {
+    console.log(number);
+    number++
+}
 // Задание 2;
 
-let e = 1;
-let d = 52;
-(e > 100 || d > 100) ? console.log('верно'): console.log('неверно');
+let variable = 7;
+while (variable <= 22) {
+    console.log(variable);
+    variable++
+}
 // Задание 3;
 
-let a = '2';
-let b = '3'; 
-alert(Number(a) + Number(b));
+const obj = {
+    'Коля': '200',
+    'Вася': '300',
+    'Петя': '400'
+}
+for (const salary in obj) {
+    console.log(`${salary} - зарплата ${obj[salary]}`);
+    }
 // Задание 4;
 
-let monthNumber = Number(prompt('Введите номер месяца'));
-switch (monthNumber) {
-    case 12:
-    case 1:
-    case 2:
-        console.log('Зима, холода, одинокие дома...');
-        break;
-    case 3:
-    case 4:
-    case 5:
-        console.log('Запахло весной, метелям отбой...');
-        break;
-    case 6:
-    case 7:
-    case 8:
-        console.log('Вот и лето наступает, помидоры расцветают...');
-        break;
-    case 9:
-    case 10:
-    case 11:
-        console.log('Осенью в дожливый серый день, проскакал по городу олень...');
-        break;
-
-    default:
-        console.log('А такой песни не существует, как и времени года');
-        break;
-};
+let n = 1000;
+let result = 0;
+while (n >= 50) {
+    n = n / 2;
+    result++
+}
+console.log(`итераций: ${result}, число: ${n}`);
 // Задание 5;
 
-let enterTheNumber = prompt('Введите любое число');
-if (isNaN(enterTheNumber) === false) {
-    console.log('number');
-} else {
-    console.log('nan')};
-if (enterTheNumber % 2 === 0) {
-    console.log('Число четное');
-} else {console.log('Число нечетное')};
-// Задание 7;
-
-let clientOS = Number(prompt('Введите 0, если у вас iOS или 1, если стоит Android'));
-if (clientOS === 1) {
-    console.log('Установите версию приложения для Android по ссылке');
-} else {
-    console.log('Установите версию приложения для iOS по ссылке');
-};
-// Задание 8;
-
-// проверка подключения))
+let friday = 7;
+while (friday <= 31) {    
+    console.log(`Сегодня пятница, ${friday}-ое число`); 
+    friday += 7;
+}
+// Задание 6;
