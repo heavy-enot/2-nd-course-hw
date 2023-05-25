@@ -278,3 +278,46 @@
 
 // isNan(a);
 // // Задание 6;
+
+// function getArea() {
+//     return this.radius ** 2 * this.pi;
+// }
+
+// function getPerimeter() {
+//     return 2 * this.pi * this.radius
+// }
+
+// const circle1 = {
+//     radius: 3,
+//     pi: 3.14,
+//     circleArea: getArea
+// };
+
+// const circle2 = {
+//     radius: 7,
+//     pi: 3.14,
+//     circlePerimeter: getPerimeter
+// };
+
+// console.log(circle1.circleArea());
+// console.log(circle2.circlePerimeter());
+// // Задание 7;
+
+// let monthNumber = Number(prompt('Введите число'));
+// function season() {    
+
+//     if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
+//         console.log('Зима, холода, одинокие дома...');
+//     } else if (monthNumber >= 3 && monthNumber <= 5) {
+//         console.log('Запахло весной, метелям отбой...');
+//     } else if (monthNumber >= 6 && monthNumber <= 8) {
+//         console.log('Вот и лето наступает, помидоры расцветают...');
+//     } else if (monthNumber >= 9 && monthNumber <= 11) {
+//         console.log('Осенью в дожливый серый день, проскакал по городу олень...');
+//     } else 
+//         console.log('А такой песни не существует, как и времени года, но вы всегда може сыграть снова');
+        
+// 	monthNumber++; 
+// }
+// season(monthNumber);
+// // Задание 8;
