@@ -97,7 +97,7 @@
 // // Задание 3;
 
 // let a = '2';
-// let b = '3'; 
+// let b = '3';
 // alert(Number(a) + Number(b));
 // // Задание 4;
 
@@ -193,8 +193,8 @@
 // // Задание 5;
 
 // let friday = 7;
-// while (friday <= 31) {    
-//     console.log(`Сегодня пятница, ${friday}-ое число`); 
+// while (friday <= 31) {
+//     console.log(`Сегодня пятница, ${friday}-ое число`);
 //     friday += 7;
 // }
 // // Задание 6;
@@ -208,7 +208,7 @@
 //         return b;
 //     }
 // }
-// 
+//
 // minNumber(16, 9);
 // // Задание 1;
 
@@ -220,20 +220,20 @@
 //         return ('нечетное');
 //     }
 // }
-// 
+//
 // evenNotEven(a);
 // // Задание 2;
 
 // function squareNumber(q) {
-//     let total = q ** 2; 
+//     let total = q ** 2;
 //     console.log(`квадрат числа равен ${total}`)
 // }
-// 
+//
 // squareNumber(7);
 // // Задание 3.1
 
 // function squareNumber(q) {
-//     let total = q ** 2; 
+//     let total = q ** 2;
 //     return(`квадрат числа равен ${total}`)
 // }
 
@@ -256,24 +256,24 @@
 
 // let a = prompt('введите первое число');
 // let b = prompt('введите второе число');
-// function isNan(a, b) {      
+// function isNan(a, b) {
 //     if (isNaN(a) || isNaN(b)) {
 //         return 'Одно или оба значения не являются числом';
 //     } else {
 //         return a * b;
-//     }    
+//     }
 // }
 
 // isNan(a, b);
 // // Задание 5;
 
 // let a = prompt('введите число');
-// function isNan(a) {   
+// function isNan(a) {
 //     if (isNaN(a)) {
 //         return 'Переданный параметр не является числом';
 //     } else {
 //         return a ** 3;
-//     }    
+//     }
 // }
 
 // isNan(a);
@@ -303,21 +303,23 @@
 // console.log(circle2.circlePerimeter());
 // // Задание 7;
 
-// let monthNumber = Number(prompt('Введите число'));
-// function season() {    
+function season() {
+    let monthNumber = Number(prompt('Введите число'));
 
-//     if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
-//         console.log('Зима, холода, одинокие дома...');
-//     } else if (monthNumber >= 3 && monthNumber <= 5) {
-//         console.log('Запахло весной, метелям отбой...');
-//     } else if (monthNumber >= 6 && monthNumber <= 8) {
-//         console.log('Вот и лето наступает, помидоры расцветают...');
-//     } else if (monthNumber >= 9 && monthNumber <= 11) {
-//         console.log('Осенью в дожливый серый день, проскакал по городу олень...');
-//     } else 
-//         console.log('А такой песни не существует, как и времени года, но вы всегда може сыграть снова');
-        
-// 	monthNumber++; 
-// }
+
+    if (monthNumber >= 1 && monthNumber <= 2 || monthNumber === 12) {
+        console.log('Зима, холода, одинокие дома...');
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        console.log('Запахло весной, метелям отбой...');
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        console.log('Вот и лето наступает, помидоры расцветают...');
+    } else if (monthNumber >= 9 && monthNumber <= 11) {
+        console.log('Осенью в дожливый серый день, проскакал по городу олень...');
+    } else
+        console.log('А такой песни не существует, как и времени года, но вы всегда може сыграть снова');
+
+    monthNumber++;
+}
 // season(monthNumber);
 // // Задание 8;
+
