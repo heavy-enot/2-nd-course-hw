@@ -85,4 +85,24 @@
     width: 344px;
     height: 236px;
   }
+  .footer {
+    background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/footer-mobile.jpg), #000915;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .footer-content__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+  }
+  .footer-content__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
 }/*# sourceMappingURL=mobile.css.map */
