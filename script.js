@@ -97,7 +97,7 @@
 // // Задание 3;
 
 // let a = '2';
-// let b = '3'; 
+// let b = '3';
 // alert(Number(a) + Number(b));
 // // Задание 4;
 
@@ -152,49 +152,174 @@
 
 // ДОМАШКА № 4
 
-let hi = 0;
-while (hi < 2) {
-    alert("привет!");
-    hi++
-}
-// Задание 1;
+// let hi = 0;
+// while (hi < 2) {
+//     alert("привет!");
+//     hi++
+// }
+// // Задание 1;
 
-let number = 0;
-while (number <= 5) {
-    console.log(number);
-    number++
-}
-// Задание 2;
+// let number = 0;
+// while (number <= 5) {
+//     console.log(number);
+//     number++
+// }
+// // Задание 2;
 
-let variable = 7;
-while (variable <= 22) {
-    console.log(variable);
-    variable++
-}
-// Задание 3;
+// let variable = 7;
+// while (variable <= 22) {
+//     console.log(variable);
+//     variable++
+// }
+// // Задание 3;
 
-const obj = {
-    'Коля': '200',
-    'Вася': '300',
-    'Петя': '400'
-}
-for (const salary in obj) {
-    console.log(`${salary} - зарплата ${obj[salary]}`);
-    }
-// Задание 4;
+// const obj = {
+//     'Коля': '200',
+//     'Вася': '300',
+//     'Петя': '400'
+// }
+// for (const salary in obj) {
+//     console.log(`${salary} - зарплата ${obj[salary]}`);
+//     }
+// // Задание 4;
 
-let n = 1000;
-let result = 0;
-while (n >= 50) {
-    n = n / 2;
-    result++
-}
-console.log(`итераций: ${result}, число: ${n}`);
-// Задание 5;
+// let n = 1000;
+// let result = 0;
+// while (n >= 50) {
+//     n = n / 2;
+//     result++
+// }
+// console.log(`итераций: ${result}, число: ${n}`);
+// // Задание 5;
 
-let friday = 7;
-while (friday <= 31) {    
-    console.log(`Сегодня пятница, ${friday}-ое число`); 
-    friday += 7;
+// let friday = 7;
+// while (friday <= 31) {
+//     console.log(`Сегодня пятница, ${friday}-ое число`);
+//     friday += 7;
+// }
+// // Задание 6;
+
+// Домашка 5
+
+// function minNumber(a, b) {
+//     if (a < b) {
+//         return a;
+// } else {
+//         return b;
+//     }
+// }
+//
+// minNumber(16, 9);
+// // Задание 1;
+
+// let a = Number(prompt('введите число'));
+// function evenNotEven(a) {
+//     if (a % 2 === 0) {
+//         return ('Четное');
+// } else {
+//         return ('нечетное');
+//     }
+// }
+//
+// evenNotEven(a);
+// // Задание 2;
+
+// function squareNumber(q) {
+//     let total = q ** 2;
+//     console.log(`квадрат числа равен ${total}`)
+// }
+//
+// squareNumber(7);
+// // Задание 3.1
+
+// function squareNumber(q) {
+//     let total = q ** 2;
+//     return(`квадрат числа равен ${total}`)
+// }
+
+// squareNumber(5);
+// // Задание 3.2
+
+// let a = Number(prompt('Сколько вам лет?'));
+// function age(a) {
+//     if (a < 0) {
+//         alert('Вы ввели неправильное значение');
+//     } else if (a >= 0 && a <= 12){
+//         alert('привет, друг!');
+//     } else {
+//         alert('Добро пожаловать!')
+//     }
+// }
+
+// age(a);
+// // Задание 4;
+
+// let a = prompt('введите первое число');
+// let b = prompt('введите второе число');
+// function isNan(a, b) {
+//     if (isNaN(a) || isNaN(b)) {
+//         return 'Одно или оба значения не являются числом';
+//     } else {
+//         return a * b;
+//     }
+// }
+
+// isNan(a, b);
+// // Задание 5;
+
+// let a = prompt('введите число');
+// function isNan(a) {
+//     if (isNaN(a)) {
+//         return 'Переданный параметр не является числом';
+//     } else {
+//         return a ** 3;
+//     }
+// }
+
+// isNan(a);
+// // Задание 6;
+
+// function getArea() {
+//     return this.radius ** 2 * this.pi;
+// }
+
+// function getPerimeter() {
+//     return 2 * this.pi * this.radius
+// }
+
+// const circle1 = {
+//     radius: 3,
+//     pi: 3.14,
+//     circleArea: getArea
+// };
+
+// const circle2 = {
+//     radius: 7,
+//     pi: 3.14,
+//     circlePerimeter: getPerimeter
+// };
+
+// console.log(circle1.circleArea());
+// console.log(circle2.circlePerimeter());
+// // Задание 7;
+
+function season() {
+    let monthNumber = Number(prompt('Введите число'));
+
+
+    if (monthNumber >= 1 && monthNumber <= 2 || monthNumber === 12) {
+        console.log('Зима, холода, одинокие дома...');
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        console.log('Запахло весной, метелям отбой...');
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        console.log('Вот и лето наступает, помидоры расцветают...');
+    } else if (monthNumber >= 9 && monthNumber <= 11) {
+        console.log('Осенью в дожливый серый день, проскакал по городу олень...');
+    } else
+        console.log('А такой песни не существует, как и времени года, но вы всегда може сыграть снова');
+
+    monthNumber++;
 }
-// Задание 6;
+// season(monthNumber);
+// // Задание 8;
+
