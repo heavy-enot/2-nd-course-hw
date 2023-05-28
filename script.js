@@ -303,27 +303,29 @@
 // console.log(circle2.circlePerimeter());
 // // Задание 7;
 
-function season() {
-    let monthNumber = Number(prompt('Введите число'));
+
+// ИГРА!!!
+// function season() {
+//     let monthNumber = Number(prompt('Введите число'));
 
 
-    if (monthNumber >= 1 && monthNumber <= 2 || monthNumber === 12) {
-        console.log('Зима, холода, одинокие дома...');
-    } else if (monthNumber >= 3 && monthNumber <= 5) {
-        console.log('Запахло весной, метелям отбой...');
-    } else if (monthNumber >= 6 && monthNumber <= 8) {
-        console.log('Вот и лето наступает, помидоры расцветают...');
-    } else if (monthNumber >= 9 && monthNumber <= 11) {
-        console.log('Осенью в дожливый серый день, проскакал по городу олень...');
-    } else
-        console.log('А такой песни не существует, как и времени года, но вы всегда може сыграть снова');
+//     if (monthNumber >= 1 && monthNumber <= 2 || monthNumber === 12) {
+//         console.log('Зима, холода, одинокие дома...');
+//     } else if (monthNumber >= 3 && monthNumber <= 5) {
+//         console.log('Запахло весной, метелям отбой...');
+//     } else if (monthNumber >= 6 && monthNumber <= 8) {
+//         console.log('Вот и лето наступает, помидоры расцветают...');
+//     } else if (monthNumber >= 9 && monthNumber <= 11) {
+//         console.log('Осенью в дожливый серый день, проскакал по городу олень...');
+//     } else
+//         console.log('А такой песни не существует, как и времени года, но вы всегда може сыграть снова');
 
-    monthNumber++;
-}
+//     monthNumber++;
+// }
 // season(monthNumber);
 // // Задание 8;
 
-Домашка 6;
+// Домашка 6;
 
 const numbers = [1, 5, 4, 10, 0, 3];
 
