@@ -327,103 +327,106 @@
 
 // Домашка 6;
 
-const numbers = [1, 5, 4, 10, 0, 3];
+// const numbers = [1, 5, 4, 10, 0, 3];
 
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] === 10) {
-        console.log(numbers[i]);
-        break;
-    }
-    console.log(numbers[i]);
-}
-// Задание 1;
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] === 10) {
+//         break;
+//     }
+//     console.log(numbers[i]);
+// }
+// // Задание 1;
 
-const numbers = [1, 5, 4, 10, 0, 3];
-console.log(numbers.indexOf(4));
-// Задание 2;
-
-
-let numbers = [1, 5, 4, 10, 0, 3];
-numbers = numbers.join(' ');
-console.log(numbers);
-// Задание 3;
+// const numbers = [1, 5, 4, 10, 0, 3];
+// console.log(numbers.indexOf(4));
+// // Задание 2;
 
 
-const arr = [];
-for (let i = 0; i < 3; i++) {
-    let innerArr = [];
-    for (let e = 0; e < 3; e++) {
-        innerArr.push(1);
-    }
-    arr.push(innerArr);
-}
-console.log(arr);
-// Задание 4;
+// let numbers = [1, 5, 4, 10, 0, 3];
+// numbers = numbers.join(' ');
+// console.log(numbers);
+// // Задание 3;
 
 
-let numbers = [1, 1, 1];
-numbers.push(2, 2, 2);
-console.log(numbers);
-// Задание 5;
+// const arr = [];
+// for (let i = 0; i < 3; i++) {
+//     let innerArr = [];
+//     for (let e = 0; e < 3; e++) {
+//         innerArr.push(1);
+//     }
+//     arr.push(innerArr);
+// }
+// console.log(arr);
+// // Задание 4;
 
 
-const arr = [9, 8, 7, 'a', 6, 5];
-arr.sort().pop();
-console.log(arr)
-// Задание 6;
+// let numbers = [1, 1, 1];
+// numbers.push(2, 2, 2);
+// console.log(numbers);
+// // Задание 5;
 
 
-let a = Number(prompt('введите число'));
-let numbers = [9, 8, 7, 6, 5];
-let userNumber = numbers.includes(a);
-console.log(userNumber);
-// Задание 7;
+// const arr = [9, 8, 7, 'a', 6, 5];
+// arr.sort().pop();
+// console.log(arr)
+// // Задание 6;
 
 
-let a = 'abcdef';
-a = a.split('').reverse('').join('');
-console.log(a);
-//Задание 8;
+// let a = Number(prompt('введите число'));
+// let numbers = [9, 8, 7, 6, 5];
+// let userNumber = numbers.includes(a);
+// console.log(userNumber);
+// // Задание 7;
 
 
-const arr = [[1, 2, 3], [4, 5, 6]];
-const result = [].concat(arr[0], arr[1]);
-console.log(result);
-
-// или можно через flat:
-
-const arr = [[1, 2, 3], [4, 5, 6]];
-const arr1 = arr.flat();
-console.log(arr1);
-// Задание 9;
+// let a = 'abcdef';
+// a = a.split('').reverse('').join('');
+// console.log(a);
+// //Задание 8;
 
 
-const randomNumbers = [1, 2, 3, 6, -9, 7, 9, 3, 0, 345, 57];
-for (let i = 0; i < (randomNumbers.length - 1); i++) {
-    console.log(randomNumbers[i] + randomNumbers[i + 1])
-};
-console.log(randomNumbers[(randomNumbers.length - 1)]);
-// Задание 10;
+// const arr = [[1, 2, 3], [4, 5, 6]];
+// const result = [].concat(arr[0], arr[1]);
+// console.log(result);
+
+// // или можно через flat:
+
+// const arr = [[1, 2, 3], [4, 5, 6]];
+// const arr1 = arr.flat();
+// console.log(arr1);
+// // Задание 9;
 
 
-const randomNumbers = [5, 2, 3, 6, 0, 345, 57];
-const result = randomNumbers.map(item => (item ** 2));
-console.log(result);
-// Задание 11;
+// const randomNumbers = [1, 2, 3, 6, -9, 7, 9, 3, 0, 345, 57];
+// for (let i = 0; i < (randomNumbers.length - 1); i++) {
+//     console.log(randomNumbers[i] + randomNumbers[i + 1])
+// };
+// console.log(randomNumbers[(randomNumbers.length - 1)]);
+// // Задание 10;
 
 
-const getLength = source => source.map(str => str.length);
-console.log(getLength(['one', 'sound', 'underground']));
-// Задание 12;
+// const randomNumbers = [5, 2, 3, 6, 0, 345, 57];
+// const result = randomNumbers.map(item => (item ** 2));
+// console.log(result);
+// // Задание 11;
 
 
-let arr = [-2, 5, 1, -5, -1, 1, 3, 4, -1];
-let minusNumbers = arr.filter(function (item) {
-    if (item <= 0) {
-        return true;
-    } else {
-        return false;
-    }
-});
-console.log(minusNumbers);
-// Задание 13;
+// const getLength = source => source.map(str => str.length);
+// console.log(getLength(['one', 'sound', 'underground']));
+// // Задание 12;
+
+
+// let arr = [-2, 5, 1, -5, -1, 1, 3, 4, -1];
+// let minusNumbers = arr.filter(function (item) {
+//     if (item <= 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// });
+// console.log(minusNumbers);
+// // Задание 13;
+
+
+Домашка 7;
+
