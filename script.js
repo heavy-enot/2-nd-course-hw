@@ -428,5 +428,82 @@
 // // Задание 13;
 
 
-Домашка 7;
+// Домашка 7;
 
+// console.log('js'.toUpperCase());
+// // Задание 1;
+
+
+// function filterByPrefix(arr, prefix) {
+//     const regex = new RegExp(`^${prefix}`, "i");
+//     return arr.filter((str) => regex.test(str));
+// }
+// console.log(filterByPrefix(["кошка", "собака", "жираф", "слон", "сова", "сом"], "со"));
+// // Задание 2;
+
+
+// Math.floor(32.58884); // 32
+// Math.ceil(32.58884); // 33
+// Math.round(32.58884); // 33
+// // Задание 3;
+
+
+// x = Math.max(52, 53, 49, 77, 21, 32);
+// y = Math.min(52, 53, 49, 77, 21, 32);
+// console.log(x, y); // 77 21
+// // Задание 4;
+
+
+// function getRandomNumber(minValue, maxValue) {
+//     return Math.round(Math.random() * maxValue);
+// }
+// console.log(getRandomNumber(0, 10));
+// // Задание 5;
+
+
+// function generateArray(num) {
+//     let arr = [];
+//     for (let i = 0; i < num / 2; i++) {
+//       arr.push(Math.floor(Math.random() * num));
+//     }
+//     return arr;
+//   }
+//   console.log(generateArray(12));
+// // Задание 6;
+
+
+// function generateRandomNumber(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+//     }
+//     console.log(generateRandomNumber(5, 155));
+// // Задание 7;
+
+
+// const currentDate = new Date();
+// const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+// console.log(currentDate.toLocaleDateString('ru-Ru', options));
+// // Задание 8;
+
+
+// let currentDate = new Date();
+// console.log(currentDate.getDate());
+// currentDate.setDate(currentDate.getDate() + 73);
+// console.log(new Date(currentDate));
+// // Задание 9;
+
+
+
+
+let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+fruits.sort(function () { return 0.5 - Math.random() });
+console.log(fruits.join(', '));
+
+let firstAnswerUser = prompt('Чему равнялся первый элемент массива?');
+let secondAnswerUser = prompt('Чему равнялся последний элемент массива?');
+if (firstAnswerUser === fruits[0] && secondAnswerUser === fruits[6]) {
+    alert('У вас хорошая память!');
+} else if (firstAnswerUser !== fruits[0] && secondAnswerUser === fruits[6] || secondAnswerUser !== fruits[6] && firstAnswerUser === fruits[0]) {
+    alert('Вы были близки к победе!');
+} else {
+    alert('Увы, ответы неверны ((');
+}
