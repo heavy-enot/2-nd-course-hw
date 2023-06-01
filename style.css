@@ -217,7 +217,7 @@ footer {
     padding-right: 16px;
   }
 }
-@media (max-width: 376px) {
+@media (min-width: 374px) and (max-width: 768px) {
   .center {
     padding-left: calc(50% - 171px);
     padding-right: calc(50% - 171px);
