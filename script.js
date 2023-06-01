@@ -491,19 +491,28 @@
 // console.log(new Date(currentDate));
 // // Задание 9;
 
+// const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+// const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+//     "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
+// let myDate = new Date();
+// let fullDate = "Сегодня: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()] + ", " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+
+// console.log(fullDate);
+// // Задание 10;
 
 
 let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 fruits.sort(function () { return 0.5 - Math.random() });
-console.log(fruits.join(', '));
+alert(fruits.join(', '));
 
 let firstAnswerUser = prompt('Чему равнялся первый элемент массива?');
 let secondAnswerUser = prompt('Чему равнялся последний элемент массива?');
-if (firstAnswerUser === fruits[0] && secondAnswerUser === fruits[6]) {
+if (firstAnswerUser.toLowerCase() === fruits[0].toLowerCase() && secondAnswerUser.toLowerCase() === fruits[6].toLowerCase()) {
     alert('У вас хорошая память!');
-} else if (firstAnswerUser !== fruits[0] && secondAnswerUser === fruits[6] || secondAnswerUser !== fruits[6] && firstAnswerUser === fruits[0]) {
+} else if (firstAnswerUser.toLowerCase() !== fruits[0].toLowerCase() && secondAnswerUser.toLowerCase() === fruits[6].toLowerCase() || secondAnswerUser.toLowerCase() !== fruits[6].toLowerCase() && firstAnswerUser.toLowerCase() === fruits[0].toLowerCase()) {
     alert('Вы были близки к победе!');
 } else {
     alert('Увы, ответы неверны ((');
 }
+// Задание 11;
