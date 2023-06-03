@@ -502,17 +502,17 @@
 // // Задание 10;
 
 
-let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-fruits.sort(function () { return 0.5 - Math.random() });
-alert(fruits.join(', '));
+// let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+// fruits.sort(function () { return 0.5 - Math.random() });
+// alert(fruits.join(', '));
 
-let firstAnswerUser = prompt('Чему равнялся первый элемент массива?');
-let secondAnswerUser = prompt('Чему равнялся последний элемент массива?');
-if (firstAnswerUser.toLowerCase() === fruits[0].toLowerCase() && secondAnswerUser.toLowerCase() === fruits[6].toLowerCase()) {
-    alert('У вас хорошая память!');
-} else if (firstAnswerUser.toLowerCase() !== fruits[0].toLowerCase() && secondAnswerUser.toLowerCase() === fruits[6].toLowerCase() || secondAnswerUser.toLowerCase() !== fruits[6].toLowerCase() && firstAnswerUser.toLowerCase() === fruits[0].toLowerCase()) {
-    alert('Вы были близки к победе!');
-} else {
-    alert('Увы, ответы неверны ((');
-}
-// Задание 11;
+// let firstAnswerUser = prompt('Чему равнялся первый элемент массива?');
+// let secondAnswerUser = prompt('Чему равнялся последний элемент массива?');
+// if (firstAnswerUser.toLowerCase() === fruits[0].toLowerCase() && secondAnswerUser.toLowerCase() === fruits[6].toLowerCase()) {
+//     alert('У вас хорошая память!');
+// } else if (firstAnswerUser.toLowerCase() !== fruits[0].toLowerCase() && secondAnswerUser.toLowerCase() === fruits[6].toLowerCase() || secondAnswerUser.toLowerCase() !== fruits[6].toLowerCase() && firstAnswerUser.toLowerCase() === fruits[0].toLowerCase()) {
+//     alert('Вы были близки к победе!');
+// } else {
+//     alert('Увы, ответы неверны ((');
+// }
+// // Задание 11;
