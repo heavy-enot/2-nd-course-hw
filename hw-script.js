@@ -516,3 +516,98 @@
 //     alert('Увы, ответы неверны ((');
 // }
 // // Задание 11;
+
+
+// Домашка 8;
+
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+];
+const peopleSort = people;
+
+console.log(peopleSort.sort(
+    function (a, b) {
+        if (a.age > b.age) {
+            return 1;
+        }
+        if (a.age < b.age) {
+            return -1;
+        }
+        return 0;
+    }));
+// Задание 1;
+
+
+const isPositive = (num) => num > 0;
+const isMale = (person) => person.gender === 'male';
+const filter = (arr, callback) => arr.filter(callback);
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const people = [
+    { name: 'Глеб', gender: 'male' },
+    { name: 'Анна', gender: 'female' },
+    { name: 'Олег', gender: 'male' },
+    { name: 'Оксана', gender: 'female' }
+];
+
+console.log(filter(people, isMale));
+// Задание 2;
+
+
+const days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница',
+    'Суббота'];
+const months = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля',
+    'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
+
+let myDate = new Date();
+let fullDate = ' ' + myDate.getDate() +
+    ' ' + months[myDate.getMonth()] +
+    ' ' + myDate.getFullYear() +
+    ', ' + days[myDate.getDay()] +
+    ' ' + myDate.getHours() + ' часов ' + myDate.getMinutes() + ' минут';
+
+const timer = (timeOff) => {
+    const interval = setInterval(() => {
+        console.log(fullDate);
+    }, 3000);
+
+
+    setTimeout(() => {
+        clearInterval(interval);
+        console.log('Время истекло!')
+    }, timeOff * 1000)
+};
+
+timer(30);
+// Задание 3;
+
+
+function delayForSecond(callback) {
+    setTimeout(() => {
+        callback();
+    }, 1000);
+}
+
+delayForSecond(function () {
+    console.log('Привет, Глеб!');
+})
+// Задание 4;
+
+
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if (cb) { cb(); }
+    }, 1000)
+}
+
+function sayHi(name) {
+    console.log(`Привет, ${name}!`);
+}
+
+setTimeout(() => { return sayHi('Глеб'); }, 1010); delayForSecond();
+// Задание 5;
